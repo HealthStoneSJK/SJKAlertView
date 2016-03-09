@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="网络错误，请重新连接" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="awt-yK-IEM">
+                                <rect key="frame" x="120" y="82" width="360" height="30"/>
+                                <color key="backgroundColor" red="0.76078431369999999" green="0.76078431369999999" blue="0.76078431369999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X8g-81-fii">
+                                <rect key="frame" x="120" y="158" width="360" height="30"/>
+                                <color key="backgroundColor" red="0.61960784310000006" green="0.52549019610000003" blue="0.36862745099999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="SHOW"/>
+                                <connections>
+                                    <action selector="showButtonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="r2r-IL-xdb"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="X8g-81-fii" firstAttribute="leading" secondItem="awt-yK-IEM" secondAttribute="leading" id="BJd-3U-v9p"/>
+                            <constraint firstItem="awt-yK-IEM" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="100" id="OIv-vt-vVB"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="awt-yK-IEM" secondAttribute="trailing" constant="100" id="ZhD-Ns-Puh"/>
+                            <constraint firstItem="X8g-81-fii" firstAttribute="top" secondItem="awt-yK-IEM" secondAttribute="bottom" constant="46" id="c2F-gn-udI"/>
+                            <constraint firstItem="awt-yK-IEM" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="62" id="m5J-iO-Apu"/>
+                            <constraint firstItem="X8g-81-fii" firstAttribute="centerX" secondItem="awt-yK-IEM" secondAttribute="centerX" id="xA2-0f-q5f"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="Message" destination="awt-yK-IEM" id="5eZ-CL-vi0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="340" y="415"/>
+        </scene>
+    </scenes>
+</document>
