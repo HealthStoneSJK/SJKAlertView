@@ -6,7 +6,8 @@
 //  Copyright © 2016年 SJK. All rights reserved.
 //
 #define DURATION 0.8f //停留时间
-#define BACKCOLOR [UIColor grayColor]
+#define BACKCOLOR [UIColor grayColor] //背景色
+
 #import <UIKit/UIKit.h>
 
 @interface SJKAlertView : UIView
