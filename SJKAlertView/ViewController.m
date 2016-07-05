@@ -26,7 +26,16 @@
 
 - (IBAction)showButtonClick:(id)sender
 {
-    [_Message resignFirstResponder];
-    [SJKAlertView showWithMessage:_Message.text];
+    UIAlertController * alert = [UIAlertController alertControllerWithTitle:@"ddddddd" message:@"sdfsadfsda" preferredStyle:UIAlertControllerStyleAlert];
+    [alert addAction:[UIAlertAction actionWithTitle:@"ok" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+    }]];
+    [alert addTextFieldWithConfigurationHandler:^(UITextField * _Nonnull textField) {
+      
+    }];
+    [self presentViewController:alert animated:YES completion:^{
+        
+    }];
+//    [_Message resignFirstResponder];
+//    [SJKAlertView showWithMessage:_Message.text];
 }
 @end
